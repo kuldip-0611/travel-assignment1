@@ -1,0 +1,210 @@
+.container{
+    @media (min-width:992px){
+        max-width : 1180px;
+    }    
+}
+.main{
+    background: url('../assets/pexels-francesco-ungaro-2835436\ 1.svg');
+    height: 75vh;
+    
+        background-size: cover;
+        background-repeat: no-repeat;
+    .nv-name{
+        font-size:48px ;
+        font-family: 'Poppins', sans-serif;
+
+    }
+    .nv-link
+    {
+        font-family: 'Poppins', sans-serif;
+        font-weight: map-get($map: $font-weight, $key: regular )    
+    }
+
+    .btn-blog{
+        @include forbtn($primary-color,$secondary-color);
+        padding: 0px 30px;
+        border: none;
+    }
+    .main-content{
+        
+        margin-top: 8em;
+
+        .ctnr-1{
+            font-size: 64px;
+        }
+        .ctnr-2{
+            font-size: 24px;
+        }
+    }
+   
+}
+.three-cards{
+    padding:40px 30px ;
+    margin-top: -50px;
+    border-radius: 30px;
+    .main-content1{
+        border: 1px solid gray;
+        border-radius: 25px;
+    
+        .air-btn img{
+            border: 1px dotted rgb(0, 0, 0);
+            border-radius: 25px;
+        }
+       
+    }
+
+    .search-btn{
+        background: rgba(62, 134, 245, 0.8);
+        border-radius: 65px;
+        padding: 12px 30px ;
+    }
+}
+.v-text{
+   writing-mode: vertical-lr;
+   letter-spacing: 0.5em;
+   text-align: center;
+   word-spacing: 20px;
+   color: gray;
+   margin-left: 10px;
+
+}
+.card{
+    border-radius: 20px;
+}
+.img-text {
+    img{
+        margin-left: 10px;
+        width: 85% !important; 
+    };
+}
+
+.price-tag{
+    font-weight: 700;
+}
+.relax-btn{
+    border: none;
+    border-radius: 50px !important;
+    padding: 3px 14px !important;
+    @include forbtn($lpink-color,$pink-color);
+    font-size: 10px ;
+
+    button{
+        border-radius: 30px;
+    }
+}
+.book-btn button{
+    border: none;
+    @include forbtn($lblue-color,$blue-color);
+}
+.adventure-btn{
+    @include forbtn($lpurple-color,$purple-color);
+    border: none;
+    border-radius: 50px !important;
+    padding: 3px 14px !important;
+    font-size: 10px;
+}
+@media (max-width:566px){
+    .card1{
+        margin: 10px;
+    }
+    .search-btn{
+        margin: 00 100px;
+    }
+}
+@media (max-width:1200px){
+    .ctnr-1{
+        font-size: 50px !important;
+
+    }
+    .ctnr-2{
+        font-size: 18px !important;
+
+    }
+}
+@media (max-width:992px){
+    .main-content{
+        margin-top: 4em !important;
+    }
+    .search-btn{
+        margin: 00 100px;
+    }
+}
+@media (max-width:900px){
+    .main-content{
+        margin-top: 5em !important;
+    }
+    
+    .ctnr-1{
+        font-size: 40px !important;
+
+    }
+    .ctnr-2{
+        font-size: 15px !important;
+
+
+    }
+    .search-btn{
+        margin: 00 100px;
+    }
+}
+@media (max-width:600px){
+    .main-content{
+        margin-top: 3em !important;
+    }
+    
+    .ctnr-1{
+        font-size: 35px !important;
+
+    }
+    .ctnr-2{
+        font-size: 12px !important;
+
+
+    }
+    .search-btn{
+        margin: 00 100px;
+    }
+}
+
+@media (max-width:434px){
+    .main-content{
+        margin-top: 2em !important;
+    }
+    .one-line{
+        .card{
+            width: 100%;
+
+            img{
+                width: 80%;
+            }
+        }
+        .v-text{
+            letter-spacing: 0.2em;
+            word-spacing: 10px;
+            font-size: 13px;
+        }
+        .btn-text{
+            margin-left: 15px !important;
+        }
+        .loga-saga{
+            margin-left: 15px !important;
+        }
+        .text-btn{
+            margin-left: 6px !important;
+        }
+    }
+}
+@media (max-width:770px){
+    .foter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        ul{
+            text-align: center;
+            padding-inline:0;
+        }
+    }
+}
